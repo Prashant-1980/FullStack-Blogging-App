@@ -24,11 +24,6 @@ pipeline {
             steps {
                 sh "mvn package"
             }
-    post {
-       success {
-               build job: 'job-1'
-            }
-         }
             
        }
     }
